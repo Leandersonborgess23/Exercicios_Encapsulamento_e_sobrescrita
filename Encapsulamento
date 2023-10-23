@@ -16,7 +16,7 @@ class Pessoa:
     def idade(self):
         return self.__idade
 
-    @nome.setter
+    @idade.setter
     def idade(self, nova_idade):
         self.__idade = nova_idade
     
@@ -24,7 +24,7 @@ class Pessoa:
     def peso(self):
         return self.__peso
 
-    @nome.setter
+    @peso.setter
     def peso(self, novo_peso):
         self.__peso = novo_peso
 
