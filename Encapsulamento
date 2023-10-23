@@ -1,0 +1,52 @@
+class Pessoa:
+    def __init__(self, nome, idade, peso):
+        self.__nome = nome
+        self.__idade = idade
+        self.__peso = peso
+
+    @property
+    def nome(self):
+        return self.__nome
+
+    @nome.setter
+    def nome(self, novo_nome):
+        self.__nome = novo_nome
+    
+    @property
+    def idade(self):
+        return self.__idade
+
+    @nome.setter
+    def idade(self, nova_idade):
+        self.__idade = nova_idade
+    
+    @property
+    def peso(self):
+        return self.__peso
+
+    @nome.setter
+    def peso(self, novo_peso):
+        self.__peso = novo_peso
+
+
+nome = input("Digite o nome da pessoa: ")
+idade = input("Digite a idade da pessoa: ")
+peso = input("Digite o peso da pessoa: ")
+
+pessoa = Pessoa(nome, idade, peso)
+
+print("Nome:", pessoa.nome)
+print("Idade:", pessoa.idade)
+print("Peso:", pessoa.peso)
+
+
+novo_nome = input("Digite o novo nome: ")
+nova_idade = input("Digite a nova idade: ")
+novo_peso = input("Digite o novo peso: ")
+pessoa.nome = novo_nome
+pessoa.idade = nova_idade
+pessoa.peso = novo_peso
+
+print("Nome atualizado:", pessoa.nome)
+print("Idade atualizada:", pessoa.idade)
+print("Peso atualizado:", pessoa.peso)
